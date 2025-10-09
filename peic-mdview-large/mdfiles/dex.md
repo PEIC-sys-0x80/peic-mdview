@@ -27,7 +27,7 @@ code-test
 
 `single code-test2`
 
-
+$exxx^{eeext}$
 
 [測試連結](http://www.google.com)
 
@@ -64,3 +64,10 @@ bbbbbb
 _斜體2_
 __斜粗2__
 
+
+$eee^{yeee}$
+
+穿山甲的 $\frac{1}{3}$ 金
+
+
+津津津$\frac{1}{3}$耖
