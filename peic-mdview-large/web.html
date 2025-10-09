@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+ <!-- 此html由PEIC studio製作 -->
+ <!-- PEIC markdown viewer V1-->   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- 定義markdown標題 -->
+     
+     <script type="module">
+        import { loadMarkdown } from './mdload.js';
+        loadMarkdown('title.md', 'titles');
+    </script>
+    <center><div id="titles"></div></center>
+    
+    <!-- 引入 CSS 文件 -->
+    <link rel="stylesheet" href="peics.css">
+    <center><div id="bk">
+   <!--主題切換-->
+<button id="themeSwitcher">☀️</button>
+
+
+    </div></center>
+    <br>
+    <center>▼</center>
+    <br>
+</head>
+<body>
+    <!-- markdown內容顯示區塊 -->
+   <div id="chhh">
+    內容載入中...<br>
+    如果頁面無法載入，請檢查瀏覽器是否支援 JavaScript。
+  </div>
+
+    <!-- 定義markdown內容 -->
+    <script type="module">
+        import { loadMarkdown } from './mdload.js';
+        loadMarkdown('dex.md', 'chhh');
+    </script>
+    <!-- 引入背景特效 -->
+    <script type="text/javascript" color="77, 143, 243" opacity="0.7" zIndex="-2" count="400" src="canvas-nest.min.js"></script>
+
+     <!--主題切換腳本-->
+     <script src="themeswitch.js"></script>
+</body>
+</html>
