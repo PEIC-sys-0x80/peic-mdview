@@ -10,289 +10,328 @@
 
   <!-- CSS樣式表 -->
   <style>
-    /*peic css*/
+ /*peic css*/
 :root {
-    color-scheme: light dark;
+  color-scheme: light dark;
 
-    --body-bg: #e0e0e0;
-    --body-color: rgb(40, 0, 105);
-    --chhh-bg: #a4c3e785;
-    --chhh-color: rgb(40, 0, 105);
-    --title-bg: #ffffffb4;
-    --title-color: rgb(40, 0, 105);
-    --h1-bg: rgba(100, 120, 231, 0.514);
-    --h1-color: #141142cb;
-    --h2-bg: rgba(127, 168, 245, 0.555);
-    --h2-color: rgba(28, 19, 114, 0.796);
-    --h3-bg: rgba(142, 198, 236, 0.61);
-    --h3-color: #201e3dcb;
-    --h4-bg: rgba(177, 223, 253, 0.685);
-    --h4-color: #3b26b3cb;
-    --strong-color:rgb(77, 116, 243);
-    --blockq-bg: #102dd19c;
-    --blockq-color: rgb(255, 255, 255);
-    --blockq-left: #3d3488 ;
-    --a-color: rgb(85, 37, 196);
-    --a-after-c: rgb(42, 26, 194);
-    --pre-bg: #09967e52;
-    --pre-left: #09967e;
-    --code-color: rgb(58, 5, 143);
-    --ulil-1:rgb(53, 38, 134);
-    --ulil-2:rgb(28, 99, 128);
-    --th-bg:#66a9d6ce;
-    --th-color:#0c045a;
-    --td-bg:#8bd2dbe8;
-    --td-color:#0c045a;
-    --tr-c:#c1ecfd;
-    --tr-last:#c1ecfd;
-    --tr-nth:#83bae7e8;
+  --body-bg: #e0e0e0;
+  --body-color: rgb(40, 0, 105);
+  --chhh-bg: #a4c3e785;
+  --chhh-color: rgb(40, 0, 105);
+  --title-bg: #ffffffb4;
+  --title-color: rgb(40, 0, 105);
+  --h1-bg: rgba(100, 120, 231, 0.514);
+  --h1-color: #141142cb;
+  --h2-bg: rgba(127, 168, 245, 0.555);
+  --h2-color: rgba(28, 19, 114, 0.796);
+  --h3-bg: rgba(142, 198, 236, 0.61);
+  --h3-color: #201e3dcb;
+  --h4-bg: rgba(177, 223, 253, 0.685);
+  --h4-color: #3b26b3cb;
+  --strong-color:rgb(77, 116, 243);
+  --blockq-bg: #102dd19c;
+  --blockq-color: rgb(255, 255, 255);
+  --blockq-left: #3d3488 ;
+
+
+  --a-color: rgb(85, 37, 196);
+  --a-after-c: rgb(42, 26, 194);
+  --a-hover: rgb(38, 142, 168);
+  --a-active-c: rgb(20, 88, 236);
+  --a-active-border:rgb(112, 142, 189);
+  --a-active-bg:rgba(118, 63, 247, 0.418);
+  --a-focus-c: rgb(79, 150, 190);
+  --a-focus-bg:rgba(50, 132, 255, 0.2);
+
+
+  --pre-bg: #09967e52;
+  --pre-left: #09967e;
+  --code-color: rgb(58, 5, 143);
+  --ulil-1:rgb(53, 38, 134);
+  --ulil-2:rgb(28, 99, 128);
+  --th-bg:#66a9d6ce;
+  --th-color:#0c045a;
+  --td-bg:#8bd2dbe8;
+  --td-color:#0c045a;
+  --tr-c:#c1ecfd;
+  --tr-last:#c1ecfd;
+  --tr-nth:#83bae7e8;
 
 }
 
 .dark-mode {
-    --body-bg: #0f2e5c;
-    --body-color: rgb(132, 207, 241);
-    --chhh-bg: #405bb16b;
-    --chhh-color: white;
-    --title-bg: #d1d7eb9c;
-    --title-color: white;
-    --h1-bg: #141142cb;
-    --h1-color: rgb(100, 216, 231);
-    --h2-bg: rgba(8, 0, 85, 0.796);
-    --h2-color: rgb(177, 223, 253);
-    --h3-bg: #201e3dcb;
-    --h3-color: rgb(101, 179, 231);
-    --h4-bg: #766ea7cb;
-    --h4-color: rgb(177, 223, 253);
-    --strong-color:rgb(49, 226, 226);
-    --blockq-bg: #10bbd181;
-    --blockq-color: rgb(255, 255, 255);
-    --blockq-left: #56b3f1 ;
-    --a-color: rgb(101, 231, 118);
-    --a-after-c: rgb(101, 231, 118);
-    --pre-bg: #09967e52;
-    --pre-left: #09967e;
-    --code-color: rgb(101, 212, 231);
-    --ulil-1:rgb(121, 248, 220);
-    --ulil-2:rgb(127, 177, 252);
-    --th-bg:#1170a7ce;
-    --th-color:#ffffff;
-    --td-bg:#105f7ee8;
-    --td-color:#fcfcfc;
-    --tr-c: #dddddd;
-    --tr-last:#ffffff;
-    --tr-nth:#0d4e68e8;
+  --body-bg: #0f2e5c;
+  --body-color: rgb(132, 207, 241);
+  --chhh-bg: #405bb16b;
+  --chhh-color: white;
+  --title-bg: #d1d7eb9c;
+  --title-color: white;
+  --h1-bg: #141142cb;
+  --h1-color: rgb(100, 216, 231);
+  --h2-bg: rgba(8, 0, 85, 0.796);
+  --h2-color: rgb(177, 223, 253);
+  --h3-bg: #201e3dcb;
+  --h3-color: rgb(101, 179, 231);
+  --h4-bg: #766ea7cb;
+  --h4-color: rgb(177, 223, 253);
+  --strong-color:rgb(49, 226, 226);
+  --blockq-bg: #10bbd181;
+  --blockq-color: rgb(255, 255, 255);
+  --blockq-left: #56b3f1 ;
+
+  --a-color: rgb(101, 231, 118);
+  --a-after-c: rgb(101, 231, 118);
+  --a-hover: rgb(182, 241, 44);
+  --a-active-c: rgb(2, 237, 245);
+  --a-active-border:rgb(63, 248, 233);
+  --a-active-bg:rgba(118, 63, 247, 0.418);
+  --a-focus-c: rgb(50, 132, 255);
+  --a-focus-bg:rgba(50, 132, 255, 0.2);
+
+  --pre-bg: #09967e52;
+  --pre-left: #09967e;
+  --code-color: rgb(101, 212, 231);
+  --ulil-1:rgb(121, 248, 220);
+  --ulil-2:rgb(127, 177, 252);
+  --th-bg:#1170a7ce;
+  --th-color:#ffffff;
+  --td-bg:#105f7ee8;
+  --td-color:#fcfcfc;
+  --tr-c: #dddddd;
+  --tr-last:#ffffff;
+  --tr-nth:#0d4e68e8;
 }
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: var(--body-bg) ;
-    color: var(--body-color);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--body-bg) ;
+  color: var(--body-color);
 }
 
 #chhh {
-    background-color:var(--chhh-bg);
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    max-width: 900px;
-    color: var(--chhh-color);
+  background-color:var(--chhh-bg);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 900px;
+  color: var(--chhh-color);
 }
 
 #titles {
-    background-color: var(--title-bg);
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    max-width: 700px;
-    color: var(--title-color);
+  background-color: var(--title-bg);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 700px;
+  color: var(--title-color);
 }
 
 h1 {
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--h1-bg);
-    color:  var(--h1-color) ;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--h1-bg);
+  color:  var(--h1-color) ;
 }
 
 h2 {
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: var(--h2-bg);
-    color: var(--h2-color);
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--h2-bg);
+  color: var(--h2-color);
 }
 
 
 
 h3 {
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
-    margin: 0 auto;
-    padding: 10px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 10px;
 
-    background-color: var(--h3-bg);
-    color: var(--h3-color);
+  background-color: var(--h3-bg);
+  color: var(--h3-color);
 }
 
 h4 {
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
-    margin: 0 auto;
-    padding: 5px;
-    background-color: var(--h4-bg);
-    color: var(--h4-color);
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: var(--h4-bg);
+  color: var(--h4-color);
 }
 strong {
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
-    margin: 0 auto;
-    font-weight:bold;
-    padding: 20px;
-    color: var(--strong-color);
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-weight:bold;
+  padding: 20px;
+  color: var(--strong-color);
 }
 
 blockquote {
-    background-color: var(--blockq-bg);
-    border-radius: 3px;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    color: var(--blockq-color);
-    border-left: solid 3px var(--blockq-left);
-    max-width: 600px;
+  background-color: var(--blockq-bg);
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  color: var(--blockq-color);
+  border-left: solid 3px var(--blockq-left);
+  max-width: 600px;
 }
 
 a {
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
-    margin: 0 auto;
-    font-weight: bold;
-    padding: 20px;
-    color: var(--a-color);
-    text-decoration: underline;
-    word-wrap: break-word; /* 確保文字換行 */
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-weight: bold;
+  padding: 5px;
+  color: var(--a-color);
+  text-decoration: underline;
+  word-wrap: break-word; 
+ display: inline-block;
+ transition: all 0.3s ease; /* 添加過渡效果 */
 }
 
-a::after {
-    content: "🌐"; /* 使用你的圖示 */
-    font-size: 13px;
-    color: var(--a-after-c);
-    margin-left: 3px; /* 與文字保持間距 */
-    vertical-align: super; /* 像次方符號般對齊 */
-    display: inline; /* 保持與文字流一致 */
+/* 滑鼠懸停時的效果 */
+a:hover {
+  color: var(--a-hover); /* 變更顏色 */
+  text-decoration: none; /* 移除底線 */
 }
+
+/* 連結被點擊時的效果 */
+a:active {
+  color: var(--a-active-c); /* 變更顏色 */
+  border: 2px solid var(--a-active-border); /* 添加邊框 */
+  background-color: var(--a-active-bg); /* 添加背景顏色 */
+   padding: 5px;  /* 確保邊框不影響整體大小 */
+  border-radius: 2px;
+}
+
+/* 連結獲得焦點時的效果（適用於鍵盤導航） */
+a:focus {
+  outline: 3px solid var(--a-focus-c); /* 添加外框 */
+  background-color: var(--a-focus-bg);
+  border-radius: 5px;
+}
+
+a:after {
+  content: "🌐"; 
+  font-size: 13px;
+  color: var(--a-after-c);
+  margin-left: 3px; 
+  vertical-align: super; 
+  display: inline; 
+}
+
 
 
 pre {
-    background-color: var(--pre-bg);
-    border-radius: 3px;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    border-left: solid 3px var(--pre-left);
+  background-color: var(--pre-bg);
+  border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  border-left: solid 3px var(--pre-left);
 }
 
 code {
-    padding: 3px;
-    margin: 0 auto;
-    color: var(--code-color);
+  padding: 3px;
+  margin: 0 auto;
+  color: var(--code-color);
 }
 
 ul li {
-    list-style-type: square;
-    color: var(--ulil-1);
+  list-style-type: square;
+  color: var(--ulil-1);
 }
 ul li ul li{
-    list-style-type: disclosure-closed;
-    color: var(--ulil-2);
+  list-style-type: disclosure-closed;
+  color: var(--ulil-2);
 }
 
 
 
 
 .wrap{
-    overflow:hidden;
-    border-radius: 3px;
-    border-radius:10px 10px 0px 0px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
-  }
+  overflow:hidden;
+  border-radius: 3px;
+  border-radius:10px 10px 0px 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+table{
+  border-collapse:collapse;
   
-  table{
-    border-collapse:collapse;
-    
-  
-  }
-  
-  th{
-    background-color:var(--th-bg);
-    color:var(--th-color);
-    width:25vw;
-    height:75px;
-  }
-  
-  td{
-    background-color:var(--td-bg);
-    color: var(--td-color);
-    width:25vw;
-    height:50px;
-    text-align:center;
-  }
-  
-  tr{
-    border-bottom: 1px solid var(--tr-c);
-  }
-  
-  tr:last-of-type{
-    border-bottom: 2px solid var(--tr-last);
-  }
-  
-  tr:nth-of-type(even) td{
-    background-color:var(--tr-nth);
-  }
-  
+
+}
+
+th{
+  background-color:var(--th-bg);
+  border-top: solid 3px var(--a-color);
+  color:var(--th-color);
+  width:25vw;
+  height:75px;
+}
+
+td{
+  background-color:var(--td-bg);
+  color: var(--td-color);
+  width:25vw;
+  height:50px;
+  text-align:center;
+}
+
+tr{
+  border-bottom: 1px solid var(--tr-c);
+}
+
+tr:last-of-type{
+  border-bottom: 2px solid var(--tr-last);
+}
+
+tr:nth-of-type(even) td{
+  background-color:var(--tr-nth);
+}
+
 /* 基礎按鈕樣式 */
 #themeSwitcher {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* 圖示與文字之間的間距 */
-  background-color: #0f739b;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+display: flex;
+align-items: center;
+gap: 8px; /* 圖示與文字之間的間距 */
+background-color: #0f739b;
+color: white;
+border: none;
+padding: 10px 16px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
 }
 
 #themeSwitcher:hover {
-  background-color: #5704c5;
-  transform: scale(1.05);
+background-color: #5704c5;
+transform: scale(1.05);
 }
 
 /* 當主題為深色時的按鈕樣式 */
 .dark-mode #themeSwitcher {
-  background-color: rgb(27, 180, 173);
-  color: #fff;
+background-color: rgb(27, 180, 173);
+color: #fff;
 }
 
 .dark-mode #themeSwitcher:hover {
-  background-color: #41c935;
+background-color: #41c935;
 }
 
-/*
-testggh{
-iik: rgb(77, 143, 243);
-}
-*/
   </style>
 
   <!-- 顯示標題的區塊 -->
