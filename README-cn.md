@@ -1,6 +1,6 @@
 # PEIC-mdview：轻量级纯前端 Markdown 内容渲染框架
 
-| [繁體中文](README.md) | **简体中文** | [English](README-en.md) |
+| [繁體中文](README-tw.md) | **简体中文** | [English](README.md) |
 
 **PEIC-mdview** 是一套**基于浏览器**运行的纯前端网页框架，旨在提供一个**高效且高兼容性**的解决方案，将 Markdown 文件内容**无需依赖后端**即时渲染为网页格式。
 
