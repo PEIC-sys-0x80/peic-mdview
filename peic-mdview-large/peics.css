@@ -1,4 +1,7 @@
-/*peic css*/
+ /*
+ peic css
+ v1.02
+ */
 :root {
   color-scheme: light dark;
 
@@ -41,10 +44,15 @@
   --th-color:#0c045a;
   --td-bg:#8bd2dbe8;
   --td-color:#0c045a;
-  --tr-c:#c1ecfd;
-  --tr-last:#c1ecfd;
+  --tr-c:#7bf5fd;
+  --tr-last:#8ed2ff;
   --tr-nth:#83bae7e8;
 
+  --hr-color: rgb(55, 3, 151);
+
+  --theme-botton-base: #0f739b;
+  --theme-botton-txtcolor:white;
+  --theme-btn-hover: #48fdd6;
 }
 
 .dark-mode {
@@ -85,9 +93,15 @@
   --th-color:#ffffff;
   --td-bg:#105f7ee8;
   --td-color:#fcfcfc;
-  --tr-c: #dddddd;
-  --tr-last:#ffffff;
+  --tr-c: #48d8b4;
+  --tr-last:#7fecb6;
   --tr-nth:#0d4e68e8;
+
+  --hr-color: rgb(23, 211, 23);
+
+  --theme-botton-base: rgb(27, 180, 173);
+  --theme-botton-txtcolor: #fff;
+  --theme-btn-hover: #41c935;
 }
 
 body {
@@ -290,32 +304,28 @@ tr:nth-of-type(even) td{
   background-color:var(--tr-nth);
 }
 
-/* 基礎按鈕樣式 */
+hr{
+  color: var(--hr-color);
+}
+
+/* 主題切換器按鈕樣式 */
 #themeSwitcher {
 display: flex;
 align-items: center;
-gap: 8px; /* 圖示與文字之間的間距 */
-background-color: #0f739b;
-color: white;
+position: fixed; /* 將按鈕固定在畫面上 */
+bottom: 20px; /*指定在底部20px處*/
+right: 20px; /*指定在右邊20px處*/
+background-color: var(--theme-botton-base);
+color: var(--theme-botton-txtcolor);
 border: none;
-padding: 10px 16px;
-font-size: 16px;
-border-radius: 5px;
+padding: 16px 20px;
+font-size: 24px;
+border-radius: 10px;
 cursor: pointer;
 transition: background-color 0.3s, transform 0.2s;
 }
 
 #themeSwitcher:hover {
-background-color: #5704c5;
+background-color: var(--theme-btn-hover);
 transform: scale(1.05);
-}
-
-/* 當主題為深色時的按鈕樣式 */
-.dark-mode #themeSwitcher {
-background-color: rgb(27, 180, 173);
-color: #fff;
-}
-
-.dark-mode #themeSwitcher:hover {
-background-color: #41c935;
 }
